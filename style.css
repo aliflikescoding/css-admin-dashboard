@@ -1,4 +1,12 @@
 
+:root {
+    --color-one: #e2e8f0;
+    --color-two: #23c28c;
+    --color-three: #2083b1;
+    --color-four: #070013;
+    --color-five: white;
+}
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -11,6 +19,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--color-four);
 }
 
 .container {
@@ -19,18 +29,52 @@ body {
 }
 
 .clickable {
+    font-weight: 300;
     transition: transform .2s;
     cursor: pointer;
+    color: var(--color-three);
 }
 
 .clickable:hover {
     transform: scale(1.1);
+    opacity: 75%;
+}
+
+.clickable i {
+    font-size: 1.2rem;
 }
 
 .profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+input[type="search"] {
+    background-color: var(--color-one);
+    border: none;
+    padding: 7.5px 100px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+.button {
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 35px;
+    background: var(--color-three);
+    color: var(--color-five);
+    border-radius: 7.5px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    opacity: 75%;
 }
 
 /* Sidebar Area */
@@ -40,6 +84,12 @@ body {
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-three);
+    color: var(--color-five);
+}
+
+.sidebar .clickable {
+    color: var(--color-five);
 }
 
 .dashboard-1 h1 {
@@ -58,7 +108,11 @@ body {
 }
 
 .layout {
-    display: grid;
+    display: flex;
+}
+
+.layout p {
+    margin-left: 10px;
 }
 
 /* Header */
@@ -67,7 +121,10 @@ body {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+}
+
+.header .clickable {
+    color: var(--color-four);
 }
 
 .header-1 {
@@ -102,8 +159,27 @@ body {
     margin: 0 5px;
 }
 
+.header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 15px;
+}
+
+.header-2 img {
+    width: 45px;
+    height: 45px;
+}
+
+.header-2 .area-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 .main-content {
     grid-column: 2 / 3;
+    background-color: var(--color-one);
 }
 
 
