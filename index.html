@@ -4,135 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="dashboard-1">
-            <h1>Dashboard</h1>
-        </div>
-        <div class="dashboard-2">
-            <p><i class="fa-solid fa-house"></i> Home</p>
-            <p><i class="fa-regular fa-address-card"></i> Profile</p>
-            <p><i class="fa-solid fa-message fa-flip-horizontal"></i> Messages</p>
-            <p><i class="fa-solid fa-clock-rotate-left"></i> History</p>
-            <p><i class="fa-solid fa-list-check"></i> Tasks</p>
-            <p><i class="fa-regular fa-address-book"></i> Communities</p>
-        </div>
-        <div class="dashboard-3">
-            <p><i class="fa-solid fa-gear"></i> Settings</p>
-            <p><i class="fa-regular fa-circle-question"></i> Support</p>
-            <p><i class="fa-solid fa-user-shield"></i> Privacy</p>
-        </div>
-    </div>
-    <div class="header">
-        <div class="header-1">
-            <div class="area-1">
-                <div class="clickable"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="search" name="" id="">
+    <div class="container">
+        <div class="sidebar">
+            <div class="dashboard-1">
+                <h1>Dashboard</h1>
             </div>
-            <div class="area-2">
-                <div class="clickable"><i class="fa-solid fa-bell"></i></div>
-                <img src="" alt="profile picture" class="profile-picture">
-                <p>User Name</p>
+            <div class="dashboard-2">
+                <p class="clickable"><i class="fa-solid fa-house"></i> Home</p>
+                <p class="clickable"><i class="fa-regular fa-address-card"></i> Profile</p>
+                <p class="clickable"><i class="fa-solid fa-message fa-flip-horizontal"></i> Messages</p>
+                <p class="clickable"><i class="fa-solid fa-clock-rotate-left"></i> History</p>
+                <p class="clickable"><i class="fa-solid fa-list-check"></i> Tasks</p>
+                <p class="clickable"><i class="fa-regular fa-address-book"></i> Communities</p>
+            </div>
+            <div class="dashboard-3">
+                <p class="clickable"><i class="fa-solid fa-gear"></i> Settings</p>
+                <p class="clickable"><i class="fa-regular fa-circle-question"></i> Support</p>
+                <p class="clickable"><i class="fa-solid fa-user-shield"></i> Privacy</p>
             </div>
         </div>
-        <div class="header-2">
-            <div class="area-1">
-                <div class="layout">
-                    <img src="" alt="profile picture" class="profile-picture">
-                    <p>Hi there,</p>
-                    <p>User Name (@user_name)</p>
-                </div>
-            </div>
-            <div class="area-2">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="main-content-1">
-            <div class="card card-main">
-                <h4>Super Cool Project</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur architecto unde rerum earum impedit saepe cumque animi ea obcaecati odio dolorum, minima, explicabo est? Perferendis repellat et suscipit sunt cum!</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-            <div class="card card-main">
-                <h4>Less Cool Project</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, deleniti ad aliquid praesentium, tenetur recusandae enim vero, et molestias cum ducimus aperiam minima doloremque qui inventore est dignissimos iste dolores ratione nesciunt voluptate autem corporis! Temporibus neque est earum ullam!</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-            <div class="card card-main">
-                <h4>Impossible App`</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus officiis unde hic perspiciatis consequuntur nisi, asperiores aliquam tempore quam maxime?</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-            <div class="card card-main">
-                <h4>Easy Peasy App</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, dicta distinctio qui dolor harum excepturi tenetur libero nisi nulla maiores vero eligendi, odio pariatur?</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-            <div class="card card-main">
-                <h4>Add Blocker</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus facilis eaque commodi quas amet provident, maiores consequatur voluptate laudantium recusandae quibusdam deleniti fugit eligendi, laboriosam accusamus soluta repellendus? Voluptas commodi veritatis esse iste nesciunt necessitatibus neque dignissimos explicabo veniam!</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-            <div class="card card-main">
-                <h4>Money Maker</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi itaque perferendis illum ipsa iste pariatur modi nisi quisquam, culpa maiores repellendus, nulla exercitationem adipisci ratione fuga. Eaque neque iusto eos ipsum quia quo aut reprehenderit cumque dolores, obcaecati et nesciunt, harum voluptas, maxime nam.</p>
-                <div class="clickable"><i class="fa-regular fa-star"></i></div>
-                <div class="clickable"><i class="fa-regular fa-eye"></i></div>
-                <div class="clickable"><i class="fa-solid fa-link"></i></div>
-            </div>
-        </div>
-        <div class="main-cotent-2"> 
-            <div class="card">
+        <div class="header">
+            <div class="header-1">
                 <div class="area-1">
-                    <p class="bold">Site Maintanance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta consequatur accusamus animi praesentium exercitationem, numquam ratione quas libero ullam, illo dicta laborum ut excepturi.</p>
+                    <div class="clickable"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="search" name="" id="">
                 </div>
                 <div class="area-2">
-                    <p class="bold">Community Share Area</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam, molestias ipsa vel a omnis iusto tempora ipsum debitis enim, autem quam nulla recusandae officiis!</p>
+                    <div class="clickable"><i class="fa-solid fa-bell"></i></div>
+                    <img src="" alt="profile picture" class="profile-picture">
+                    <p>User Name</p>
                 </div>
-                <div class="area-3">
-                    <p class="bold">Upadted Privacy Policy</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat sit amet error nesciunt, facere harum voluptates natus esse dolore. Error dicta et eligendi quos aspernatur.</p>
+            </div>
+            <div class="header-2">
+                <div class="area-1">
+                    <div class="layout">
+                        <img src="" alt="profile picture" class="profile-picture">
+                        <p>Hi there,</p>
+                        <p>User Name (@user_name)</p>
+                    </div>
+                </div>
+                <div class="area-2">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
                 </div>
             </div>
         </div>
-        <div class="main-content-3">
-            <div class="layout">
-                <img class="profile-picture" src="" alt="profile picture">
-                <p class="bold-not-so">@asta</p>
-                <p>future wizzard king</p>
+        <div class="main-content">
+            <div class="main-content-1">
+                <div class="card card-main">
+                    <h4>Super Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur architecto unde rerum earum impedit saepe cumque animi ea obcaecati odio dolorum, minima, explicabo est? Perferendis repellat et suscipit sunt cum!</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
+                <div class="card card-main">
+                    <h4>Less Cool Project</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, deleniti ad aliquid praesentium, tenetur recusandae enim vero, et molestias cum ducimus aperiam minima doloremque qui inventore est dignissimos iste dolores ratione nesciunt voluptate autem corporis! Temporibus neque est earum ullam!</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
+                <div class="card card-main">
+                    <h4>Impossible App`</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus officiis unde hic perspiciatis consequuntur nisi, asperiores aliquam tempore quam maxime?</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
+                <div class="card card-main">
+                    <h4>Easy Peasy App</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima, dicta distinctio qui dolor harum excepturi tenetur libero nisi nulla maiores vero eligendi, odio pariatur?</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
+                <div class="card card-main">
+                    <h4>Add Blocker</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus facilis eaque commodi quas amet provident, maiores consequatur voluptate laudantium recusandae quibusdam deleniti fugit eligendi, laboriosam accusamus soluta repellendus? Voluptas commodi veritatis esse iste nesciunt necessitatibus neque dignissimos explicabo veniam!</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
+                <div class="card card-main">
+                    <h4>Money Maker</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi itaque perferendis illum ipsa iste pariatur modi nisi quisquam, culpa maiores repellendus, nulla exercitationem adipisci ratione fuga. Eaque neque iusto eos ipsum quia quo aut reprehenderit cumque dolores, obcaecati et nesciunt, harum voluptas, maxime nam.</p>
+                    <div class="clickable"><i class="fa-regular fa-star"></i></div>
+                    <div class="clickable"><i class="fa-regular fa-eye"></i></div>
+                    <div class="clickable"><i class="fa-solid fa-link"></i></div>
+                </div>
             </div>
-            <div class="layout">
-                <img class="profile-picture" src="" alt="profile picture">
-                <p class="bold-not-so">@naruto</p>
-                <p>hokage of konoha</p>
+            <div class="main-cotent-2"> 
+                <div class="card">
+                    <div class="area-1">
+                        <p class="bold">Site Maintanance</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta consequatur accusamus animi praesentium exercitationem, numquam ratione quas libero ullam, illo dicta laborum ut excepturi.</p>
+                    </div>
+                    <div class="area-2">
+                        <p class="bold">Community Share Area</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam, molestias ipsa vel a omnis iusto tempora ipsum debitis enim, autem quam nulla recusandae officiis!</p>
+                    </div>
+                    <div class="area-3">
+                        <p class="bold">Upadted Privacy Policy</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat sit amet error nesciunt, facere harum voluptates natus esse dolore. Error dicta et eligendi quos aspernatur.</p>
+                    </div>
+                </div>
             </div>
-            <div class="layout">
-                <img class="profile-picture" src="" alt="profile picture">
-                <p class="bold-not-so">@technoblade</p>
-                <p>he shall never die</p>
-            </div>
-            <div class="layout">
-                <img class="profile-picture" src="" alt="profile picture">
-                <p class="bold-not-so">@bob</p>
-                <p>bob the Admin</p>
+            <div class="main-content-3">
+                <div class="layout">
+                    <img class="profile-picture" src="" alt="profile picture">
+                    <p class="bold-not-so">@asta</p>
+                    <p>future wizzard king</p>
+                </div>
+                <div class="layout">
+                    <img class="profile-picture" src="" alt="profile picture">
+                    <p class="bold-not-so">@naruto</p>
+                    <p>hokage of konoha</p>
+                </div>
+                <div class="layout">
+                    <img class="profile-picture" src="" alt="profile picture">
+                    <p class="bold-not-so">@technoblade</p>
+                    <p>he shall never die</p>
+                </div>
+                <div class="layout">
+                    <img class="profile-picture" src="" alt="profile picture">
+                    <p class="bold-not-so">@bob</p>
+                    <p>bob the Admin</p>
+                </div>
             </div>
         </div>
     </div>
