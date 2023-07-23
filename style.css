@@ -71,7 +71,7 @@ input[type="search"] {
     padding: 10px 35px;
     background: var(--color-three);
     color: var(--color-five);
-    border-radius: 7.5px;
+    border-radius: 25px;
     transition: transform 0.2s;
     cursor: pointer;
 }
@@ -150,6 +150,10 @@ input[type="search"] {
 
 .header .clickable {
     color: var(--color-four);
+}
+
+.header .clickable:hover {
+    color: var(--color-three);
 }
 
 .header-1 {
@@ -313,6 +317,7 @@ input[type="search"] {
     -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.43);
     -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.43);
     grid-template-rows: 25px 1fr 25px;
+    transition: transform 0.2s;
 }
 
 .card h4 {
@@ -322,6 +327,10 @@ input[type="search"] {
 .card-main {
     display: grid;
     gap: 15px;
+}
+
+.card-main:hover {
+    transform: scale(0.95);
 }
 
 .card-links {
