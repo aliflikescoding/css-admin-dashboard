@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     color: var(--color-four);
 }
@@ -26,6 +26,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+.container .clickable {
+    font-size: 1.6rem;
 }
 
 .clickable {
@@ -77,12 +81,25 @@ input[type="search"] {
     opacity: 75%;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.bold-not-so {
+    font-weight: 550;
+}
+
+.font-small {
+    font-size: 1rem;
+}
+
 /* Sidebar Area */
 
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: flex;
+    font-weight: 700;
     flex-direction: column;
     background-color: var(--color-three);
     color: var(--color-five);
@@ -90,6 +107,7 @@ input[type="search"] {
 
 .sidebar .clickable {
     color: var(--color-five);
+    font-weight: 500;
 }
 
 .dashboard-1 h1 {
@@ -98,13 +116,15 @@ input[type="search"] {
 
 .sidebar p {
     font-size: 1.2rem;
-    margin: 5px;
+    margin: 20px 0;
 }
 
 .dashboard-1,
 .dashboard-2,
 .dashboard-3 {
     margin: 15px;
+    position: sticky;
+
 }
 
 .layout {
@@ -121,6 +141,11 @@ input[type="search"] {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+}
+
+.header i {
+    font-size: 1.5rem;
 }
 
 .header .clickable {
@@ -177,9 +202,134 @@ input[type="search"] {
     gap: 20px;
 }
 
+.header-1,
+.header-2 {
+    margin: 15px 35px;
+}
+
+/* main content */
+
 .main-content {
     grid-column: 2 / 3;
     background-color: var(--color-one);
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    position: relative;
 }
 
+.main-content-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    margin: 50px 35px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    position: relative;
+}
 
+.main-content-1-text::before {
+    content: "Your Projects";
+    position: absolute;
+    font-weight: 700;
+    top: 15px;
+    left: 35px;
+    color: var(--color-four);
+    
+}
+
+.main-content-2 {
+    margin: 50px 35px;
+    margin-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-content-2::before {
+    content: "Announcements";
+    position: absolute;
+    font-weight: 700;
+    color: var(--color-four);
+    top: -35px;
+}
+
+/* .main-content-2 .area-1,
+.main-content-2 .area-2,
+.main-content-2 .area-3 */
+
+.main-content-2 .area-1,
+.main-content-2 .area-2 {
+    margin-bottom: 40px;
+}
+
+.main-content-2 .area-1::after,
+.main-content-2 .area-2::after {
+    content: "";
+    position: absolute;
+    background: var(--color-four);
+    width: 85%;
+    height: 1px;
+    margin: 20px 0;
+    opacity: 0.25;
+}
+
+.main-content-3 {
+    margin: 50px 35px;
+    margin-left: 0;
+    position: relative;
+}
+
+.main-content-3-text::before {
+    content: "Trending";
+    position: absolute;
+    font-weight: 700;
+    top: -35px;
+    color: var(--color-four);
+}
+
+.main-content-3 .card {
+    padding: 30px 20px;
+}
+
+.main-content-3 img {
+    height: 50px;
+    width: 50px;
+}
+
+.main-content .layout {
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+/* card styles */
+
+.card {
+    background-color: var(--color-five);
+    font-size: 1rem;
+    padding: 45px 35px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,0.43);
+    grid-template-rows: 25px 1fr 25px;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+}
+
+.card-main {
+    display: grid;
+    gap: 15px;
+}
+
+.card-links {
+    display: flex;
+    justify-self: end;
+}
+
+.card-links i {
+    margin-left: 25px;
+    font-size: 1.6rem;
+}
